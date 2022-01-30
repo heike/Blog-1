@@ -30,17 +30,3 @@ Write a blog post answering the following questions:
 
 <!--Go to [https://github.com/Stat585-at-ISU/blog](https://github.com/Stat585-at-ISU/blog) for instructions about how to prepare and submit your blog post.-->
 Instructions to follow.
-
-
-{% assign num_posts = site.blog | size %}
-{% if num_posts > 0 %}
-## Class posts:
-
-<ul>
-{% for post in site.blog %}
-  {% if page.topic == post.topic %}
-  <li><a href="{{ post.url }}">{{ post.title }} by {{ post.author }}</a></li>
-  {% endif %}
-{% endfor %}
-</ul>
-{% endif %}
